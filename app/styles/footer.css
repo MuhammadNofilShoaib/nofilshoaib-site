@@ -1,0 +1,41 @@
+.img {
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+}
+
+.footer {
+    color: #03045E;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.heading {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.images {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mail {
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        position: relative;
+    }
+}

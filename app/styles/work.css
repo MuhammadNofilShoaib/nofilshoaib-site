@@ -1,0 +1,103 @@
+.work {
+    margin: 100px 100px;
+    color: #03045E;
+} 
+
+.workHeading {
+    color: #F7F197;
+    font-size: 65px;
+    text-shadow: 1px 1px 1px #474306;
+}
+
+.workPara {
+    color: #03045E;
+    font-size: 24px;
+}
+
+.work-2 {
+    margin: 150px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image1, .image2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.p1 {
+    padding: 5px 0;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.imageHead {
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 10px 0;
+}
+
+.p2 {
+    font-size: 18px;
+    margin: 0 100px;
+}
+
+.workPic {
+    border-radius: 20px;
+    z-index: 999;
+    box-shadow: 1px 1px 10px #474306;
+}
+
+@media screen and (max-width: 890px) {
+    .work {
+        text-align: center;
+        margin: 10px 15px;
+    }
+    .workHeading {
+        font-size: 40px;
+    }
+    .workPara {
+        font-size: 20px;
+    }
+    .work-2 {
+        margin-top: 50px;
+        text-align: left;
+        margin-left: 0px;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .workPic {
+        width: 250px;
+        height: 250px;
+    }
+    .imageHead {
+        padding: 0;
+    }
+    .p2 {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (min-width: 890px) {
+    .workPic {
+        width: 300px;
+        height: 300px;
+    }
+    .p2 {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 1333px) {
+    .workPic {
+        width: 506px;
+        height: 400px;
+    }
+    .p2 {
+        margin: 0 110px;
+    }
+}
+
