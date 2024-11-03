@@ -10,12 +10,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    animation: mainPage;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
 .picture {
     display: flex;
     justify-content: end;
     align-items: end;
+    animation: mainPageReverse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
 }
 
 .line-a {
@@ -48,7 +54,8 @@ button {
     border: 1px solid #474306;
     transition: ease-in-out 0.2s;
     box-shadow: 1px 1px 0px #474306;
-    z-index: 1000;
+    z-index: 1000; 
+
 }
 
 button:hover {
@@ -133,3 +140,24 @@ button:hover {
         margin: -10px 0;
     }
 }
+
+@keyframes mainPage {
+    from {
+        opacity: 0%;
+        transform: translateX(-100px);
+    } to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes mainPageReverse {
+    from {
+        opacity: 0%;
+        transform: translateX(100px);
+    } to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+

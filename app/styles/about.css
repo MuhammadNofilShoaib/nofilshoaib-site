@@ -5,17 +5,26 @@
 
 
 .aboutHeading {
+    animation: mainPage;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
     color: #F7F197;
     font-size: 65px;
     text-shadow: 1px 1px 1px #474306;
 }
 
 .aboutPara {
+    animation: mainPage;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
     color: #03045E;
     font-size: 24px;
 }
 
 .about-2 {
+    animation: mainPageReverse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
     color: #03045E;
     margin-top: 100px;
     margin-left: 350px;
@@ -160,5 +169,25 @@
         font-weight: bolder;
     }
  }
+
+ @keyframes mainPage {
+    from {
+        opacity: 0%;
+        transform: translateX(-100px);
+    } to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes mainPageReverse {
+    from {
+        opacity: 0%;
+        transform: translateX(100px);
+    } to {
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
 
 

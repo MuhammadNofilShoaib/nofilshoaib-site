@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <div className="hero-section">
         <div className="content">
-          <p className="line-a">hello, i&apos;m nofil,</p> 
+          <p className="line-a">hello, i&apos;m nofil,</p>  
           <p className="line-b">front end</p>
           <p className="line-b">developer</p>
           <p className="line-a">based in pakistan</p>
